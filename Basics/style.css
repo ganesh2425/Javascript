@@ -1,0 +1,21 @@
+.out{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+}
+
+.in{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+div.name{
+    visibility: hidden;
+}

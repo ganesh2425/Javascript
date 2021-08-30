@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+
+    <label>Start Date</label>
+    <input type="date" id="StartDate"/>
+    <br/>
+    <label>End Date</label>
+    <input type="date" id="EndDate"/>
+    <br/>
+
+    <button type="submit" onclick="cal()">Age Calculator</button>
+    <hr/>
+
+    <h3>AGE IS</h3>
+    <h4 id="doY"></h4><span>Years</span>
+    <h4 id="doM"></h4><span>Months</span>
+    <h4 id="doD"></h4><span>Days</span>
+
+    <script>
+        function cal(){
+            let startdate = document.getElementById("StartDate").value;
+            let enddate = document.getElementById("EndDate").value;
+
+            let startdate_year = new Date(startdate).getFullYear();
+            let startdate_month = new Date(startdate).getMonth();
+            let startdate_date = new Date(startdate).getDate();
+
+            let endDate_year = new Date(enddate).getFullYear();
+            let enddate_month = new Date(enddate).getMonth();
+            let enddate_date = new Date(enddate).getDate();
+        document.getElementById("doY").innerHTML = startdate_year-endDate_year,
+        document.getElementById("doM").innerHTML = startdate_month-enddate_month;
+        document.getElementById("doD").innerHTML = startdate_date-enddate_date;
+        }
+    </script>
+</body>
+</html>
