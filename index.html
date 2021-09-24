@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <body>
+            <button onclick="document.getElementById('root').innerHTML=Date()">Today date is?</button>
+            <p id="root"></p>
+            <hr/>
+            <button onclick="this.innerHTML=Date()">date</button>
+            <hr/>
+            <button onclick="displayDate()">Date is?</button>
+            <script>
+                function displayDate(){
+                    document.getElementById('demo').innerHTML=Date();
+                }
+                </script>
+                <p id="demo"></p>
+        </body>
+    </head>
+</html>
